@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: https://openfaas-ingress-austinrivas.cloud.okteto.net
+functions:
+  hello-rust:
+    lang: rust
+    handler: ./function
+    image: austinrivas/hello-rust:latest
+
